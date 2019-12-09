@@ -41,8 +41,6 @@ import org.json.JSONObject;
 import static android.os.PowerManager.PARTIAL_WAKE_LOCK;
 import android.app.NotificationChannel;
 
-public static final String NOTIFICATION_CHANNEL_ID_SERVICE = "de.appplant.cordova.plugin.background";
-public static final String NOTIFICATION_CHANNEL_ID_INFO = "com.package.download_info";
 
 /**
  * Puts the service in a foreground state, where the system considers it to be
@@ -51,6 +49,9 @@ public static final String NOTIFICATION_CHANNEL_ID_INFO = "com.package.download_
  */
 public class ForegroundService extends Service {
 
+    public static final String NOTIFICATION_CHANNEL_ID_SERVICE = "de.appplant.cordova.plugin.background";
+    public static final String NOTIFICATION_CHANNEL_ID_INFO = "com.package.download_info";
+ 
     // Fixed ID for the 'foreground' notification
     public static final int NOTIFICATION_ID = -574543954;
 
